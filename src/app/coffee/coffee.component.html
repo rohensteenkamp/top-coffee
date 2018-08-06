@@ -1,0 +1,18 @@
+<h2> Top Coffees </h2>
+
+<ul class = "coffees">
+  <li *ngFor = "let coffee of coffees">
+    <a routerLink = "/detail/{{coffee.id}}">
+    <span class = "badge">{{coffee.id}} </span> {{coffee.name}}
+    </a>
+  </li>
+</ul>
+  <ul class = "making">
+    <li *ngFor = "let make of making">
+      <a routerLink = "/detail/{{make.name}}">
+      <span class = "badge">{{make.name}} </span> {{make.description}}
+      </a>
+    </li>
+  </ul>
+
+<!-- <app-coffee-detail [coffee] = "selectedCoffee"></app-coffee-detail> -->

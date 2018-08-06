@@ -1,0 +1,8 @@
+<div class = "describe" *ngIf = "make">
+
+  <h2 align = "center">{{make.name | uppercase}}</h2>
+  
+  <h3 align = "center">Description</h3>
+    <p align = "center" *ngFor = "let dis of make.description">{{dis}}</p>
+    
+</div>

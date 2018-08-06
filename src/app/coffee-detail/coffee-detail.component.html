@@ -1,0 +1,20 @@
+<div class = "coffee-detail" *ngIf = "coffee">
+
+    <h2 align = "center"> {{coffee.name | uppercase}} </h2>
+ 
+    <img [src] = "coffee.imageurl" class = "logo"/> 
+   
+    <h3 align = "center">Story</h3>
+    <p align = "center" *ngFor = "let paragraph of coffee.story" >{{paragraph}}</p>
+
+    <h3 align = "center">Origin</h3>
+    <p align = "center">{{coffee.origin}}</p>
+
+    <h3 align = "center">Show Me</h3>
+
+        <agm-map [latitude] = "coffee.place.lat" [longitude] = "coffee.place.lng">
+            <agm-marker [latitude] = "coffee.place.lat" [longitude] = "coffee.place.lng"></agm-marker>
+            <agm-info-window></agm-info-window> 
+        </agm-map>
+
+</div>

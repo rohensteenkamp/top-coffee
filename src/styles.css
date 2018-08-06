@@ -1,0 +1,135 @@
+/* Application-wide Styles */
+h1 {
+    color: rgb(133, 228, 9);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2 {
+    color: rgb(104, 218, 11);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3 {
+    color: rgb(31, 184, 69);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    
+  /* everywhere else */
+  * {
+    color: rgb(80, 126, 172);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #03090c;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #03090c;
+  }
+  .dash {
+    margin-top: 1cm;
+    margin-right: 5cm;
+    margin-left: 5cm;
+  }
+ body, html {
+   height: 100%;
+   background-image: url("https://www.highreshdwallpapers.com/wp-content/uploads/2012/03/Wood-Wallpaper.jpg");
+
+   background-position: center;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-size: cover;
+ }
+ .bg {
+  height: 100%;
+}
+ .container {
+  height: 100%;
+ }
+ #footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+ }
+ .coffee-detail {
+  /* border: 1px solid red; */
+  margin-top: 0;
+  margin-right: 10cm;
+  margin-left: 10cm;
+}
+.homeSet {
+  /* border: 1px solid red; */
+
+  width: 500px;
+  height: 150px;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+.making {
+  /* border: 1px solid red; */
+  width: 250px;
+  height: 200px;
+
+  padding-right: 10px;
+  padding-left: 10px;
+
+  position: absolute;
+  top:750px;
+  bottom: 650px;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+.describe {
+  /* border: 1px solid red; */
+  margin-top: 0;
+  margin-right: 15cm;
+  margin-left: 15cm;
+  margin-bottom: 2cm;
+}
+/* #map {
+  height: 300px;
+  width: 1000px;
+
+  position: absolute;
+  top:70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+} */
+agm-map { 
+  height: 300px;
+  width: 1120px;
+
+  position: absolute;
+
+  margin: 10px;
+}

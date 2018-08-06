@@ -1,0 +1,34 @@
+<div class = "dash">
+
+<h1 align = "center">The Coffees</h1>
+
+<div class = "grid grid-pad">
+ <div class = "container">
+  <div class = "row">
+   <a *ngFor = "let coffee of coffees" class = "col-4" routerLink = "/detail/{{coffee.name}}">
+    <div class = "module coffee">
+      <h4>{{coffee.name}}</h4>
+    </div>
+   </a>
+   </div>
+  </div>
+</div>
+
+</div>
+
+<div class = "making">
+  <h2 align = "center">How it's made</h2>
+
+  <div class = "grid grid-pad">
+      <div class = "container">
+      <div class = "row">
+        <a *ngFor = "let make of making" class = "col-12" routerLink = "/makers/{{make.name}}">
+          <div class = "module make">
+            <h4>{{make.name}}</h4>
+          </div>
+        </a>
+      </div>
+      </div>
+  </div>
+</div>
+
